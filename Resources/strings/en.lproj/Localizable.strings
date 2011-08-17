@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  DeviceTest
+
+  Created by 荻野 雅 on 11/08/17.
+  Copyright 2011 __MyCompanyName__. All rights reserved.
+*/
+Great-blessing = "Great blessing";
+Middle-blessing = "Middle blessing";
+Small-blessing = "Small blessing";
+Blessing = "Blessing";
+Near-blessing = "Near blessing";
+Curse = "Curse";
+Great-curse = "Great Curse";

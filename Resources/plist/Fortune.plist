@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Blessing</key>
+	<dict>
+		<key>Name</key>
+		<string>Blessing</string>
+		<key>Value</key>
+		<integer>3</integer>
+	</dict>
+	<key>Curse</key>
+	<dict>
+		<key>Name</key>
+		<string>Curse</string>
+		<key>Value</key>
+		<integer>5</integer>
+	</dict>
+	<key>Great-blessing</key>
+	<dict>
+		<key>Name</key>
+		<string>Great-blessing</string>
+		<key>Value</key>
+		<integer>0</integer>
+	</dict>
+	<key>Great-curse</key>
+	<dict>
+		<key>Name</key>
+		<string>Great-curse</string>
+		<key>Value</key>
+		<integer>6</integer>
+	</dict>
+	<key>Middle-blessing</key>
+	<dict>
+		<key>Name</key>
+		<string>Middle-blessing</string>
+		<key>Value</key>
+		<integer>1</integer>
+	</dict>
+	<key>Near-blessing</key>
+	<dict>
+		<key>Name</key>
+		<string>Near-blessing</string>
+		<key>Value</key>
+		<integer>4</integer>
+	</dict>
+	<key>Small-blessing</key>
+	<dict>
+		<key>Name</key>
+		<string>Small-blessing</string>
+		<key>Value</key>
+		<integer>2</integer>
+	</dict>
+</dict>
+</plist>

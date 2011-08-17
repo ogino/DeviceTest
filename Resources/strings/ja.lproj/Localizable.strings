@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  DeviceTest
+
+  Created by 荻野 雅 on 11/08/17.
+  Copyright 2011 __MyCompanyName__. All rights reserved.
+*/
+Great-blessing = "大吉";
+Middle-blessing = "中吉";
+Small-blessing = "小吉";
+Blessing = "吉";
+Near-blessing = "末吉";
+Curse = "凶";
+Great-curse = "大凶";

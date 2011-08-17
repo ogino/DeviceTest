@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'Fortune' target in the 'Fortune' project
+// Prefix header for all source files of the 'DeviceTest' target in the 'DeviceTest' project
 //
 
 #import <Availability.h>

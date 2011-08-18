@@ -19,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+	[UIApplication sharedApplication].idleTimerDisabled = YES;
 	[UIApplication sharedApplication].statusBarHidden = YES;
 	self.window.rootViewController = self.viewController;
 	[self.window makeKeyAndVisible];

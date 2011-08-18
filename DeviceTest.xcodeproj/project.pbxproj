@@ -13,6 +13,13 @@
 		881657B213F9DE2E006ABB8F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8883E62913F27290002D3228 /* MainWindow.xib */; };
 		881657B313F9DE45006ABB8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 885DD4A513F249950015F75E /* main.m */; };
 		881657C313FA507E006ABB8F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881657C213FA507E006ABB8F /* CoreMotion.framework */; };
+		884A908513FC71F300D13891 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884A908413FC71F300D13891 /* AudioToolbox.framework */; };
+		884A908713FC721000D13891 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884A908413FC71F300D13891 /* AudioToolbox.framework */; };
+		884A908913FC811D00D13891 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 884A908813FC811D00D13891 /* iTunesArtwork */; };
+		884A908B13FC815500D13891 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 884A908A13FC815500D13891 /* Icon-72.png */; };
+		884A908D13FC818B00D13891 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 884A908C13FC818B00D13891 /* Icon-Small.png */; };
+		884A908F13FC81C600D13891 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 884A908E13FC81C600D13891 /* Icon-Small-50.png */; };
+		884A909113FC820200D13891 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 884A909013FC820200D13891 /* Icon-Small@2x.png */; };
 		886C90DC13FB537D007A536A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 886C90DB13FB537D007A536A /* Icon.png */; };
 		886C90DE13FB53BC007A536A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 886C90DD13FB53BC007A536A /* Icon@2x.png */; };
 		886C90E913FB6391007A536A /* Fortune.plist in Resources */ = {isa = PBXBuildFile; fileRef = 886C90E813FB6391007A536A /* Fortune.plist */; };
@@ -35,6 +42,12 @@
 
 /* Begin PBXFileReference section */
 		881657C213FA507E006ABB8F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		884A908413FC71F300D13891 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		884A908813FC811D00D13891 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		884A908A13FC815500D13891 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		884A908C13FC818B00D13891 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		884A908E13FC81C600D13891 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		884A909013FC820200D13891 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		885DD49813F249950015F75E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		885DD49A13F249950015F75E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		885DD49C13F249950015F75E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884A908513FC71F300D13891 /* AudioToolbox.framework in Frameworks */,
 				886C910613FB7B90007A536A /* UIKit.framework in Frameworks */,
 				886C910713FB7B90007A536A /* Foundation.framework in Frameworks */,
 				886C910813FB7B90007A536A /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884A908713FC721000D13891 /* AudioToolbox.framework in Frameworks */,
 				881657C313FA507E006ABB8F /* CoreMotion.framework in Frameworks */,
 				88D8B1E113F9DCF600DBCD0D /* UIKit.framework in Frameworks */,
 				88D8B1E213F9DCF600DBCD0D /* Foundation.framework in Frameworks */,
@@ -126,6 +141,7 @@
 				885DD49A13F249950015F75E /* Foundation.framework */,
 				885DD49C13F249950015F75E /* CoreGraphics.framework */,
 				881657C213FA507E006ABB8F /* CoreMotion.framework */,
+				884A908413FC71F300D13891 /* AudioToolbox.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -218,8 +234,13 @@
 		886C90D913FB5369007A536A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				884A908813FC811D00D13891 /* iTunesArtwork */,
 				886C90DB13FB537D007A536A /* Icon.png */,
 				886C90DD13FB53BC007A536A /* Icon@2x.png */,
+				884A908A13FC815500D13891 /* Icon-72.png */,
+				884A908C13FC818B00D13891 /* Icon-Small.png */,
+				884A908E13FC81C600D13891 /* Icon-Small-50.png */,
+				884A909013FC820200D13891 /* Icon-Small@2x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -362,6 +383,11 @@
 				886C90DE13FB53BC007A536A /* Icon@2x.png in Resources */,
 				886C90E913FB6391007A536A /* Fortune.plist in Resources */,
 				886C90F913FB69D9007A536A /* Localizable.strings in Resources */,
+				884A908913FC811D00D13891 /* iTunesArtwork in Resources */,
+				884A908B13FC815500D13891 /* Icon-72.png in Resources */,
+				884A908D13FC818B00D13891 /* Icon-Small.png in Resources */,
+				884A908F13FC81C600D13891 /* Icon-Small-50.png in Resources */,
+				884A909113FC820200D13891 /* Icon-Small@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +626,7 @@
 				886C911613FB7B90007A536A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88D8B1F913F9DCF600DBCD0D /* Build configuration list for PBXNativeTarget "DeviceTest" */ = {
 			isa = XCConfigurationList;

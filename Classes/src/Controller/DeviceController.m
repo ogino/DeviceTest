@@ -7,6 +7,8 @@
 //
 
 #import "DeviceController.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import <AudioToolbox/AudioServices.h>
 
 @interface DeviceController (PrivateDelegateHandling)
 - (void)prepareAccelerometer;
@@ -18,6 +20,9 @@
 - (void)deleteShakeMotionText:(NSTimer*)timer;
 - (NSString*)createBlessText;
 - (void)createBlessing;
+- (void)prepareBlessing;
+- (void)refreshBlessing:(NSNotification*)notification;
+- (void)refreshBlessText;
 @end
 
 
@@ -50,7 +55,11 @@
     return self;
 }
 
+#define REFRESH_BLESSING @"REFRESH BLESSING"
+
 - (void)dealloc {
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:REFRESH_BLESSING object:nil];
 	self.label = nil;
 	self.xAcceler = nil;
 	self.yAcceler = nil;
@@ -86,6 +95,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshBlessing:) name:REFRESH_BLESSING object:nil];
 	self.label.text = @"デバイスの方位チェック";
 	self.fortune = [[[Fortune alloc] init] autorelease];
 	self.accelerometerX = 0.0;
@@ -281,11 +291,31 @@
 }
 
 - (void)createBlessing {
+	AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
 	if (self.count-- < 2) {
-		self.blessText.text = [self createBlessText];
-		self.count = COUNT_MAX;
+		self.blessText.text = nil;
+		self.countText.text = nil;
+		[self performSelectorInBackground:@selector(prepareBlessing) withObject:nil];
 	}
 	self.countText.text = [NSString stringWithFormat:@"%u", self.count];
+}
+
+- (void)prepareBlessing {
+	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+	[NSThread sleepForTimeInterval:0.5f];
+	[[NSNotificationCenter defaultCenter] postNotificationName:REFRESH_BLESSING object:self userInfo:nil];
+	[pool release];
+}
+
+- (void)refreshBlessing:(NSNotification*)notification {
+	self.count = COUNT_MAX;
+	[self performSelectorOnMainThread:@selector(refreshBlessText) withObject:nil waitUntilDone:YES];
+}
+
+- (void)refreshBlessText {
+	self.blessText.text = [self createBlessText];
+	self.countText.text = [NSString stringWithFormat:@"%u", self.count];
+	AudioServicesPlaySystemSound(1011);
 }
 
 @end
